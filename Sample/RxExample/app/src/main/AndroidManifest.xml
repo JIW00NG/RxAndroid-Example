@@ -27,15 +27,15 @@
 <!--        <activity android:name=".RxJava.BasicActivity"/>-->
 
         <!--Start for RxKotlin Example-->
-<!--        <activity-->
-<!--            android:name=".RxKotlin.HomeActivity"-->
-<!--            android:exported="true" >-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+        <activity
+            android:name=".RxKotlin.HomeActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
