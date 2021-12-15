@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment" >
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.anjian.RxExample.RxKotlin.fragments.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/main_layout">
+        <action
+            android:id="@+id/action_homeFragment_to_basicFragment"
+            app:destination="@id/basicFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_rxFragment"
+            app:destination="@id/rxFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/basicFragment"
+        android:name="com.anjian.RxExample.RxKotlin.fragments.BasicFragment"
+        android:label="BasicFragment"
+        tools:layout="@layout/example_layout"/>
+    <fragment
+        android:id="@+id/rxFragment"
+        android:name="com.anjian.RxExample.RxKotlin.fragments.RxFragment"
+        android:label="RxFragment"
+        tools:layout="@layout/example_layout"/>
+</navigation>
